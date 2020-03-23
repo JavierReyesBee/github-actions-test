@@ -17,8 +17,8 @@ jobs:
 
     steps:
       - run: |
-        echo {{ github.ref }}
-        echo {{ github.event_name }}
+        echo ${{ github.ref }}
+        echo ${{ github.event_name }}
 
       - run: echo "----------------    Entro en PR      -----------------------"
         if: {{ github.ref == 'ref/head/master' }}
