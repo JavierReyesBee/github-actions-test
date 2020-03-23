@@ -16,10 +16,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: |
-        echo ${{ github.ref }}
-        echo ${{ github.event_name }}
-
       - run: echo "----------------    Entro en PR      -----------------------"
         if: {{ github.ref == 'ref/head/master' }}
 
