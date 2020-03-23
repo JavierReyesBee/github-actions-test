@@ -25,3 +25,4 @@ jobs:
       - run: echo "---------------              Entro por ambos    -----------------------"
         if: github.ref == 'ref/head/master' && github.event_name == 'push'
 
+      - run: echo ${{ github.ref }}
